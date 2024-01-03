@@ -1,0 +1,102 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "Bank_calling_system",
+					"jsonFile" : "directory-Bank_calling_system-Debug-2d5fa6e5cff4ad77fc15.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Bank_calling_system",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "Huffman_tree_encoder_and_decoder_simulation",
+					"jsonFile" : "directory-Huffman_tree_encoder_and_decoder_simulation-Debug-a257e1f551c27b8cc010.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Huffman_tree_encoder_and_decoder_simulation"
+				},
+				{
+					"build" : "Parking_lot_management_system",
+					"jsonFile" : "directory-Parking_lot_management_system-Debug-b239fa19d502219f031d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.26"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "Parking_lot_management_system"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "Data_Structures_and_Algorithms",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "main::@b95fbd799fd4385f958e",
+					"jsonFile" : "target-main-Debug-ba50cb99b885e77187e6.json",
+					"name" : "main",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug",
+		"source" : "D:/code/c/Data_Structures_and_Algorithms"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 5
+	}
+}

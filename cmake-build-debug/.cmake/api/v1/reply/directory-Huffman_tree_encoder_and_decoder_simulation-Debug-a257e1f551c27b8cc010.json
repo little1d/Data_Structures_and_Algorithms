@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "Huffman_tree_encoder_and_decoder_simulation",
+		"source" : "Huffman_tree_encoder_and_decoder_simulation"
+	}
+}

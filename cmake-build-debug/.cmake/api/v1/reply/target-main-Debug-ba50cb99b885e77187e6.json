@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Data_Structures_and_Algorithms.exe"
+			"path" : "Bank_calling_system/main.exe"
 		},
 		{
-			"path" : "Data_Structures_and_Algorithms.pdb"
+			"path" : "Bank_calling_system/main.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -13,10 +13,12 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_executable",
+			"include_directories"
 		],
 		"files" : 
 		[
+			"Bank_calling_system/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -27,8 +29,17 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 6,
+				"line" : 1,
 				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 6,
+				"parent" : 2
 			}
 		]
 	},
@@ -39,6 +50,13 @@
 			[
 				{
 					"fragment" : "-g -std=gnu11 -fdiagnostics-color=always"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "D:/code/c/Data_Structures_and_Algorithms/./include"
 				}
 			],
 			"language" : "C",
@@ -52,12 +70,11 @@
 			},
 			"sourceIndexes" : 
 			[
-				0,
-				1
+				0
 			]
 		}
 	],
-	"id" : "Data_Structures_and_Algorithms::@6890427a1f51a3e7e1df",
+	"id" : "main::@b95fbd799fd4385f958e",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -77,12 +94,12 @@
 		],
 		"language" : "C"
 	},
-	"name" : "Data_Structures_and_Algorithms",
-	"nameOnDisk" : "Data_Structures_and_Algorithms.exe",
+	"name" : "main",
+	"nameOnDisk" : "main.exe",
 	"paths" : 
 	{
-		"build" : ".",
-		"source" : "."
+		"build" : "Bank_calling_system",
+		"source" : "Bank_calling_system"
 	},
 	"sourceGroups" : 
 	[
@@ -90,15 +107,7 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0,
-				1
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				2
+				0
 			]
 		}
 	],
@@ -109,17 +118,6 @@
 			"compileGroupIndex" : 0,
 			"path" : "Bank_calling_system/main.c",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "Bank_calling_system/user_table_generate.c",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "Bank_calling_system/business_table.h",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

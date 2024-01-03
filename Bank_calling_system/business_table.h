@@ -4,11 +4,11 @@
   Date: January 2, 2024
 */
 
-
 // business_table.h
 #ifndef BUSINESS_TABLE_H
 #define BUSINESS_TABLE_H
 
+//
 typedef enum {
     BUSINESS_A,
     BUSINESS_B,

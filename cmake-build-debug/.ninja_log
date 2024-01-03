@@ -1,4 +1,5 @@
 # ninja log v5
-1	122	7259013625262940	build.ninja	cc17f484f6f3ec9a
-0	115	7259013626609448	CMakeFiles/Data_Structures_and_Algorithms.dir/Bank_calling_system/main.c.obj	9cc3459a7c7932c6
-3	118	7259013626632641	CMakeFiles/Data_Structures_and_Algorithms.dir/Bank_calling_system/user_table_generate.c.obj	d7a66c9d1131a61
+0	133	7259851977644674	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
+135	304	7259851979322960	Bank_calling_system/main.exe	814b63b24b28d3cc
+3	133	7259855328957793	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
+133	294	7259855330548065	Bank_calling_system/main.exe	814b63b24b28d3cc

@@ -31,11 +31,10 @@ void generateUserTable() {
         user.businessType = rand() % 5; // Random business type
         fprintf(file, "%d %d %d\n", user.userID, user.arrivalTime, user.businessType);
     }
-
     fclose(file);
 }
 
-int main() {
+int generateUserTableMain() {
     generateUserTable();
     return 0;
 }

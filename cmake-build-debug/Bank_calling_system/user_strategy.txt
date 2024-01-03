@@ -1,0 +1,13 @@
+Window 1:
+User 0 arrives at 4, starts at 35, processes for 10 minutes.
+User 3 arrives at 15, starts at 25, processes for 10 minutes.
+User 5 arrives at 44, starts at 20, processes for 5 minutes.
+User 8 arrives at 31, starts at 0, processes for 20 minutes.
+Window 2:
+User 1 arrives at 17, starts at 20, processes for 20 minutes.
+User 6 arrives at 48, starts at 15, processes for 5 minutes.
+User 9 arrives at 5, starts at 0, processes for 15 minutes.
+Window 3:
+User 2 arrives at 0, starts at 25, processes for 10 minutes.
+User 4 arrives at 29, starts at 15, processes for 10 minutes.
+User 7 arrives at 20, starts at 0, processes for 15 minutes.

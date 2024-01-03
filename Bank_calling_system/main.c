@@ -1,12 +1,7 @@
-//
-// Created by 24315 on 2024/1/2.
-//
-
-// main.c
+#include "user_table_generate.h"
 #include "business_table.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 typedef struct QueueNode {
     int userID;
@@ -28,6 +23,7 @@ Queue* createQueue();
 void processUserTable(const char* filename);
 
 int main() {
+    generateUserTable();
     processUserTable("user_table_1.txt");
     return 0;
 }
@@ -122,6 +118,3 @@ void processUserTable(const char* filename) {
 
     fclose(outFile);
 }
-
-// 注意：这段代码需要和 business_table.h 一起编译运行。
-

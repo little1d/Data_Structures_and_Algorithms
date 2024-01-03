@@ -100,6 +100,15 @@
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "C:/Users/24315/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"path" : "Bank_calling_system/CMakeLists.txt"
+		},
+		{
+			"path" : "Huffman_tree_encoder_and_decoder_simulation/CMakeLists.txt"
+		},
+		{
+			"path" : "Parking_lot_management_system/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
