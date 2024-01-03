@@ -84,6 +84,13 @@ build Bank_calling_system/CMakeFiles/main.dir/main.c.obj: C_COMPILER__main_unsca
   OBJECT_DIR = Bank_calling_system\CMakeFiles\main.dir
   OBJECT_FILE_DIR = Bank_calling_system\CMakeFiles\main.dir
 
+build Bank_calling_system/CMakeFiles/main.dir/user_generation.c.obj: C_COMPILER__main_unscanned_Debug D$:/code/c/Data_Structures_and_Algorithms/Bank_calling_system/user_generation.c || cmake_object_order_depends_target_main
+  DEP_FILE = Bank_calling_system\CMakeFiles\main.dir\user_generation.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/code/c/Data_Structures_and_Algorithms/./include
+  OBJECT_DIR = Bank_calling_system\CMakeFiles\main.dir
+  OBJECT_FILE_DIR = Bank_calling_system\CMakeFiles\main.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -92,7 +99,7 @@ build Bank_calling_system/CMakeFiles/main.dir/main.c.obj: C_COMPILER__main_unsca
 #############################################
 # Link the executable Bank_calling_system\main.exe
 
-build Bank_calling_system/main.exe: C_EXECUTABLE_LINKER__main_Debug Bank_calling_system/CMakeFiles/main.dir/main.c.obj
+build Bank_calling_system/main.exe: C_EXECUTABLE_LINKER__main_Debug Bank_calling_system/CMakeFiles/main.dir/main.c.obj Bank_calling_system/CMakeFiles/main.dir/user_generation.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = Bank_calling_system\CMakeFiles\main.dir

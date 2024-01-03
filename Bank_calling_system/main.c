@@ -6,6 +6,7 @@
 typedef struct QueueNode {
     int userID;
     int arrivalTime;
+    int startTime; // The Time when the user starts being served
     int processTime;
     struct QueueNode* next;
 } QueueNode;
@@ -17,14 +18,14 @@ typedef struct {
 } Queue;
 
 // Function prototypes
-void enqueue(Queue* q, int userID, int arrivalTime, int processTime);
+void enqueue(Queue* q, int userID, int arrivalTime, int processTime, int startTime);
 QueueNode* dequeue(Queue* q);
 Queue* createQueue();
 void processUserTable(const char* filename);
 
 int main() {
-    generateUserTable();
-    processUserTable("user_table_1.txt");
+    generateUsers("users_table.txt");
+    processUserTable("users_table.txt");
     return 0;
 }
 
@@ -37,11 +38,16 @@ Queue* createQueue() {
 }
 
 // Enqueue operation for the queue
-void enqueue(Queue* q, int userID, int arrivalTime, int processTime) {
+void enqueue(Queue* q, int userID, int arrivalTime, int processTime, int startTime) {
     QueueNode* newNode = (QueueNode*)malloc(sizeof(QueueNode));
+    if (newNode == NULL) {
+        perror("Memory allocation failed");
+        exit(1);
+    }
     newNode->userID = userID;
     newNode->arrivalTime = arrivalTime;
     newNode->processTime = processTime;
+    newNode->startTime = startTime; // Add the startTime to the node
     newNode->next = NULL;
 
     if (q->rear == NULL) {
@@ -50,8 +56,9 @@ void enqueue(Queue* q, int userID, int arrivalTime, int processTime) {
         q->rear->next = newNode;
         q->rear = newNode;
     }
-    q->totalTime += processTime;
+    q->totalTime = (q->totalTime > arrivalTime ? q->totalTime : arrivalTime) + processTime;
 }
+
 
 // Dequeue operation for the queue
 QueueNode* dequeue(Queue* q) {
@@ -68,7 +75,6 @@ QueueNode* dequeue(Queue* q) {
 // Process the user table
 void processUserTable(const char* filename) {
     FILE* file = fopen(filename, "r");
-    // 继续 main.c
     if (file == NULL) {
         perror("Error opening file");
         exit(1);
@@ -76,13 +82,21 @@ void processUserTable(const char* filename) {
 
     Queue* windows[3];
     for (int i = 0; i < 3; i++) {
-        windows[i] = createQueue(); // Create queues for each window
+        windows[i] = createQueue();
     }
 
     // Read and process each user from the file
-    int userID, arrivalTime, businessType;
-    while (fscanf(file, "%d %d %d", &userID, &arrivalTime, &businessType) != EOF) {
-        int processTime = businessTable[businessType].processTime;
+    int userID, arrivalTime, businessType1,businessType2;
+    char businessTypesStr[10];  // Buffer to store business types as string
+    while (fscanf(file, "User %d, Business type:%[^\n] , Arrival Time: %d\n", &userID, businessTypesStr, &arrivalTime) != EOF) {
+        int processTime = 0;
+        int numScanned = sscanf(businessTypesStr, "%d %d", &businessType1, &businessType2);
+
+        // Calculate total process time based on the number of business types
+        processTime += businessTable[businessType1].processTime;
+        if (numScanned == 2) {
+            processTime += businessTable[businessType2].processTime;
+        }
 
         // Find the shortest queue
         int minTimeWindow = 0;
@@ -92,8 +106,10 @@ void processUserTable(const char* filename) {
             }
         }
 
-        // Enqueue the user to the shortest queue
-        enqueue(windows[minTimeWindow], userID, arrivalTime, processTime);
+        // Calculate start time for the user
+        int startTime = (windows[minTimeWindow]->totalTime > arrivalTime) ?
+                        windows[minTimeWindow]->totalTime : arrivalTime;
+        enqueue(windows[minTimeWindow], userID, arrivalTime, processTime, startTime);
     }
 
     fclose(file);
@@ -109,8 +125,9 @@ void processUserTable(const char* filename) {
         fprintf(outFile, "Window %d:\n", i + 1);
         while (windows[i]->front != NULL) {
             QueueNode* user = dequeue(windows[i]);
-            fprintf(outFile, "User %d arrives at %d, starts at %d, processes for %d minutes.\n",
-                    user->userID, user->arrivalTime, windows[i]->totalTime, user->processTime);
+            int endTime = user->startTime + user->processTime;
+            fprintf(outFile, "User %d arrives at %d, starts at %d, ends at %d, processes for %d minutes.\n",
+                    user->userID, user->arrivalTime, user->startTime, endTime, user->processTime);
             free(user);
         }
         free(windows[i]);
@@ -118,3 +135,4 @@ void processUserTable(const char* filename) {
 
     fclose(outFile);
 }
+

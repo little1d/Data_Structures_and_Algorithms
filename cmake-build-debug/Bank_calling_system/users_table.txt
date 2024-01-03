@@ -1,0 +1,10 @@
+User 1, Business type:1 , Arrival Time: 266
+User 2, Business type:0 2 , Arrival Time: 439
+User 3, Business type:0 4 , Arrival Time: 18
+User 4, Business type:0 2 , Arrival Time: 0
+User 5, Business type:1 4 , Arrival Time: 248
+User 6, Business type:3 3 , Arrival Time: 218
+User 7, Business type:4 , Arrival Time: 376
+User 8, Business type:1 3 , Arrival Time: 232
+User 9, Business type:3 , Arrival Time: 418
+User 10, Business type:3 0 , Arrival Time: 80

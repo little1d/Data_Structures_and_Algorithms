@@ -1,5 +1,15 @@
 # ninja log v5
-0	133	7259851977644674	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
-135	304	7259851979322960	Bank_calling_system/main.exe	814b63b24b28d3cc
-3	133	7259855328957793	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
-133	294	7259855330548065	Bank_calling_system/main.exe	814b63b24b28d3cc
+3	136	7259897115487618	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
+136	320	7259897117304368	Bank_calling_system/main.exe	288efa09ad17aa1f
+3	101	7259887154227387	Bank_calling_system/CMakeFiles/main.dir/user_generation.c.obj	4c800d529d6ea697
+3	96	7259897330953743	Bank_calling_system/CMakeFiles/main.dir/user_generation.c.obj	4c800d529d6ea697
+97	247	7259897332443768	Bank_calling_system/main.exe	288efa09ad17aa1f
+2	96	7259897639554038	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
+97	259	7259897641129912	Bank_calling_system/main.exe	288efa09ad17aa1f
+3	191	7259903415379735	Bank_calling_system/main.exe	288efa09ad17aa1f
+3	172	7259910849295122	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
+172	411	7259910851381047	Bank_calling_system/main.exe	288efa09ad17aa1f
+2	104	7259912113648742	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
+105	252	7259912115096074	Bank_calling_system/main.exe	288efa09ad17aa1f
+3	102	7259913959984940	Bank_calling_system/CMakeFiles/main.dir/main.c.obj	6e003defbb070a7b
+103	246	7259913961396383	Bank_calling_system/main.exe	288efa09ad17aa1f

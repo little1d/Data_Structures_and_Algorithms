@@ -1,40 +1,26 @@
-//
-// Created by 24315 on 2024/1/2.
-//
+/*
+ This header file is used to generate a user table.
+ The user table information includes the user's id, the time the user arrives and the business required.
+ Author: Harrison
+ Date: January 3, 2024
+*/
 
-// 用户表生成程序：用于随机生成用户、用户到达银行的时间和所需办理的业务，结果文件输出到文本文件 `user_table_1.txt`
-
-// user_table.c
+#ifndef USER_TABLE_GENERATE_H
+#define  USER_TABLE_GENERATE_H
 #include "business_table.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
+// User structure
 typedef struct {
-    int userID;
-    int arrivalTime; // in minutes
-    BusinessType businessType;
-} User;
+    int userId;
+    BusinessType businessTypes[2]; // Maximum of 2 business types
+    int arrivalTime; //
+}User;
 
-void generateUserTable() {
-    FILE *file = fopen("user_table_1.txt", "w");
-    if (file == NULL) {
-        perror("Error opening file");
-        exit(1);
-    }
+// Function declaration to generate user list
+void generateUsers(const char *filename);
 
-    srand(time(NULL)); // Seed for random number generation
-    for (int i = 0; i < 10; i++) {
-        User user;
-        user.userID = i;
-        user.arrivalTime = rand() % 60; // Random time within an hour
-        user.businessType = rand() % 5; // Random business type
-        fprintf(file, "%d %d %d\n", user.userID, user.arrivalTime, user.businessType);
-    }
-    fclose(file);
-}
 
-int generateUserTableMain() {
-    generateUserTable();
-    return 0;
-}
+#endif //USER_TABLE_GENERATE_H

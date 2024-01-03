@@ -4,11 +4,10 @@
   Date: January 2, 2024
 */
 
-// business_table.h
-#ifndef BUSINESS_TABLE_H
+#ifndef BUSINESS_TABLE_H // Prevent duplicate inclusion of header files
 #define BUSINESS_TABLE_H
 
-//
+// Use enumeration types to store businessType
 typedef enum {
     BUSINESS_A,
     BUSINESS_B,

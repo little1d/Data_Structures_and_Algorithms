@@ -1,13 +1,13 @@
 Window 1:
-User 0 arrives at 4, starts at 35, processes for 10 minutes.
-User 3 arrives at 15, starts at 25, processes for 10 minutes.
-User 5 arrives at 44, starts at 20, processes for 5 minutes.
-User 8 arrives at 31, starts at 0, processes for 20 minutes.
+User 1 arrives at 3552818, starts at 3552818, ends at 3552828, processes for 10 minutes.
+User 4 arrives at 3153978, starts at 3552828, ends at 3552848, processes for 20 minutes.
+User 56 arrives at 875700282, starts at 875700282, ends at 875700317, processes for 35 minutes.
 Window 2:
-User 1 arrives at 17, starts at 20, processes for 20 minutes.
-User 6 arrives at 48, starts at 15, processes for 5 minutes.
-User 9 arrives at 5, starts at 0, processes for 15 minutes.
+User 57 arrives at 859054138, starts at 859054138, ends at 859054158, processes for 20 minutes.
+User 56 arrives at 825368634, starts at 859054158, ends at 859054198, processes for 40 minutes.
+User 7 arrives at 3553075, starts at 859054198, ends at 859054223, processes for 25 minutes.
+User 50 arrives at 858923066, starts at 859054223, ends at 859054253, processes for 30 minutes.
+User 9 arrives at 3682612, starts at 859054253, ends at 859054273, processes for 20 minutes.
+User 0 arrives at 808984634, starts at 859054273, ends at 859054298, processes for 25 minutes.
 Window 3:
-User 2 arrives at 0, starts at 25, processes for 10 minutes.
-User 4 arrives at 29, starts at 15, processes for 10 minutes.
-User 7 arrives at 20, starts at 0, processes for 15 minutes.
+User 0 arrives at 942743610, starts at 942743610, ends at 942743640, processes for 30 minutes.

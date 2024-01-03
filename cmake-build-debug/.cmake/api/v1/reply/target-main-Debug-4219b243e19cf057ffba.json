@@ -70,7 +70,8 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -107,7 +108,8 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				1
 			]
 		}
 	],
@@ -117,6 +119,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "Bank_calling_system/main.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Bank_calling_system/user_generation.c",
 			"sourceGroupIndex" : 0
 		}
 	],
