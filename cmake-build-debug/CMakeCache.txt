@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+Bank_calling_system_BINARY_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug/Bank_calling_system
+
+//Value Computed by CMake
+Bank_calling_system_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Bank_calling_system_SOURCE_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms/Bank_calling_system
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=C:/Users/24315/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/mingw/bin/addr2line.exe
 
@@ -218,6 +227,15 @@ Data_Structures_and_Algorithms_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 Data_Structures_and_Algorithms_SOURCE_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms
+
+//Value Computed by CMake
+Parking_lot_management_system_BINARY_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug/Parking_lot_management_system
+
+//Value Computed by CMake
+Parking_lot_management_system_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Parking_lot_management_system_SOURCE_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms/Parking_lot_management_system
 
 
 ########################

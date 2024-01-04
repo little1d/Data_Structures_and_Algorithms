@@ -165,6 +165,47 @@ build Huffman_tree_encoder_and_decoder_simulation/rebuild_cache: phony Huffman_t
 # D:/code/c/Data_Structures_and_Algorithms/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target park_main
+
+
+#############################################
+# Order-only phony target for park_main
+
+build cmake_object_order_depends_target_park_main: phony || Parking_lot_management_system/CMakeFiles/park_main.dir
+
+build Parking_lot_management_system/CMakeFiles/park_main.dir/park_main.c.obj: C_COMPILER__park_main_unscanned_Debug D$:/code/c/Data_Structures_and_Algorithms/Parking_lot_management_system/park_main.c || cmake_object_order_depends_target_park_main
+  DEP_FILE = Parking_lot_management_system\CMakeFiles\park_main.dir\park_main.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/code/c/Data_Structures_and_Algorithms/./include
+  OBJECT_DIR = Parking_lot_management_system\CMakeFiles\park_main.dir
+  OBJECT_FILE_DIR = Parking_lot_management_system\CMakeFiles\park_main.dir
+
+build Parking_lot_management_system/CMakeFiles/park_main.dir/utils.c.obj: C_COMPILER__park_main_unscanned_Debug D$:/code/c/Data_Structures_and_Algorithms/Parking_lot_management_system/utils.c || cmake_object_order_depends_target_park_main
+  DEP_FILE = Parking_lot_management_system\CMakeFiles\park_main.dir\utils.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/code/c/Data_Structures_and_Algorithms/./include
+  OBJECT_DIR = Parking_lot_management_system\CMakeFiles\park_main.dir
+  OBJECT_FILE_DIR = Parking_lot_management_system\CMakeFiles\park_main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target park_main
+
+
+#############################################
+# Link the executable Parking_lot_management_system\park_main.exe
+
+build Parking_lot_management_system/park_main.exe: C_EXECUTABLE_LINKER__park_main_Debug Parking_lot_management_system/CMakeFiles/park_main.dir/park_main.c.obj Parking_lot_management_system/CMakeFiles/park_main.dir/utils.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Parking_lot_management_system\CMakeFiles\park_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Parking_lot_management_system\park_main.exe
+  TARGET_IMPLIB = Parking_lot_management_system\libpark_main.dll.a
+  TARGET_PDB = park_main.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -195,6 +236,10 @@ build main: phony Bank_calling_system/main.exe
 
 build main.exe: phony Bank_calling_system/main.exe
 
+build park_main: phony Parking_lot_management_system/park_main.exe
+
+build park_main.exe: phony Parking_lot_management_system/park_main.exe
+
 # =============================================================================
 # Folder targets.
 
@@ -224,7 +269,7 @@ build Huffman_tree_encoder_and_decoder_simulation/all: phony
 #############################################
 # Folder: D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug/Parking_lot_management_system
 
-build Parking_lot_management_system/all: phony
+build Parking_lot_management_system/all: phony Parking_lot_management_system/park_main.exe
 
 # =============================================================================
 # Built-in targets

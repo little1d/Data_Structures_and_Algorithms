@@ -28,7 +28,7 @@
 						"string" : "3.26"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 0,
+					"projectIndex" : 1,
 					"source" : "Bank_calling_system",
 					"targetIndexes" : 
 					[
@@ -54,25 +54,52 @@
 						"string" : "3.26"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "Parking_lot_management_system"
+					"projectIndex" : 2,
+					"source" : "Parking_lot_management_system",
+					"targetIndexes" : 
+					[
+						1
+					]
 				}
 			],
 			"name" : "Debug",
 			"projects" : 
 			[
 				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
 					"directoryIndexes" : 
 					[
 						0,
-						1,
-						2,
-						3
+						2
 					],
-					"name" : "Data_Structures_and_Algorithms",
+					"name" : "Data_Structures_and_Algorithms"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "Bank_calling_system",
+					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
 						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						3
+					],
+					"name" : "Parking_lot_management_system",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
 					]
 				}
 			],
@@ -81,9 +108,16 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "main::@b95fbd799fd4385f958e",
-					"jsonFile" : "target-main-Debug-4219b243e19cf057ffba.json",
+					"jsonFile" : "target-main-Debug-f3f3675e7f18f99f37e7.json",
 					"name" : "main",
-					"projectIndex" : 0
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "park_main::@52737b27a1ad7e70fd3e",
+					"jsonFile" : "target-park_main-Debug-144911507d7519d2dbb5.json",
+					"name" : "park_main",
+					"projectIndex" : 2
 				}
 			]
 		}

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "Bank_calling_system/main.exe"
+			"path" : "Parking_lot_management_system/park_main.exe"
 		},
 		{
-			"path" : "Bank_calling_system/main.pdb"
+			"path" : "Parking_lot_management_system/park_main.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -18,7 +18,7 @@
 		],
 		"files" : 
 		[
-			"Bank_calling_system/CMakeLists.txt",
+			"Parking_lot_management_system/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -29,7 +29,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 1,
+				"line" : 3,
 				"parent" : 0
 			},
 			{
@@ -75,7 +75,7 @@
 			]
 		}
 	],
-	"id" : "main::@b95fbd799fd4385f958e",
+	"id" : "park_main::@52737b27a1ad7e70fd3e",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -95,12 +95,12 @@
 		],
 		"language" : "C"
 	},
-	"name" : "main",
-	"nameOnDisk" : "main.exe",
+	"name" : "park_main",
+	"nameOnDisk" : "park_main.exe",
 	"paths" : 
 	{
-		"build" : "Bank_calling_system",
-		"source" : "Bank_calling_system"
+		"build" : "Parking_lot_management_system",
+		"source" : "Parking_lot_management_system"
 	},
 	"sourceGroups" : 
 	[
@@ -111,6 +111,14 @@
 				0,
 				1
 			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				2,
+				3
+			]
 		}
 	],
 	"sources" : 
@@ -118,14 +126,24 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Bank_calling_system/main.c",
+			"path" : "Parking_lot_management_system/park_main.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "Bank_calling_system/user_generation.c",
+			"path" : "Parking_lot_management_system/utils.c",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Parking_lot_management_system/stack.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"path" : "Parking_lot_management_system/queue.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"
