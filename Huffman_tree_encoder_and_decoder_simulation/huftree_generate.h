@@ -7,7 +7,7 @@
 // Huffman tree node structure definition
 typedef struct HuffmanNode{
     char character;
-    char frequency;
+    int frequency;
     struct HuffmanNode* left;
     struct HuffmanNode* right;
 }HuffmanNode;
@@ -16,5 +16,6 @@ typedef struct HuffmanNode{
 HuffmanNode* generateHuffmanTree(int n);
 void printHuffmanTree(HuffmanNode* root,int depth);
 void encodeCharacters(HuffmanNode* root,char* code,int top);
+void decodeHuffmanTree(HuffmanNode* root, const char* encodedMessage);
 
 #endif //DATA_STRUCTURES_AND_ALGORITHMS_HUFTREE_GENERATE_H
