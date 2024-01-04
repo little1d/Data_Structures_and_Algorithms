@@ -1,3 +1,9 @@
+/*
+ * This c source file store common functions
+ * Author:Harrison
+ * DATE: January 4, 2024
+ */
+
 #include "stack.h"
 #include "queue.h"
 #include<stdlib.h>
@@ -73,7 +79,7 @@ bool enqueue(CarQueue* queue,Car car){
     return true;
 }
 
-Car deQueue(CarQueue* queue){
+Car dequeue(CarQueue* queue){
     if(queue->front == NULL){
         Car emptyCar = {0,0};
         return emptyCar;
