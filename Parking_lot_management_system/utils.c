@@ -46,3 +46,52 @@ Car peek(CarStack* stack){
     }
     return stack->cars[stack->top];
 }
+
+// Initialization of the shortcut
+CarQueue* createQueue(){
+    CarQueue* queue = (CarQueue*)malloc(sizeof(CarQueue));
+    queue->front = NULL;
+    queue->rear = NULL;
+    return queue;
+}
+
+// bool value indicates whether the enqueue operation was executed successfully
+bool enqueue(CarQueue* queue,Car car){
+    QueueNode *newNode = (QueueNode*) malloc(sizeof(CarQueue));
+    if(newNode == NULL) return false;
+
+    newNode->car = car;
+    newNode->next = NULL;
+
+    if(queue->rear == NULL){
+        queue->front = queue->rear = newNode;
+    }
+    else{
+        queue->rear->next = newNode;
+        queue->rear = newNode;
+    }
+    return true;
+}
+
+Car deQueue(CarQueue* queue){
+    if(queue->front == NULL){
+        Car emptyCar = {0,0};
+        return emptyCar;
+    }
+
+    QueueNode* temp = queue->front;
+    queue->front = queue->front->next;
+
+    // if there is only one car to deQueue, after deQueue, empty the queue
+    if(queue->front == NULL){
+        queue->rear = NULL;
+    }
+
+    Car car = temp->car;
+    free(temp);
+    return car;
+}
+
+bool isQueueEmpty(CarQueue* queue){
+    return queue->front == NULL;
+}
