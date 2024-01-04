@@ -229,6 +229,15 @@ Data_Structures_and_Algorithms_IS_TOP_LEVEL:STATIC=ON
 Data_Structures_and_Algorithms_SOURCE_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms
 
 //Value Computed by CMake
+Huffman_tree_encoder_and_decoder_BINARY_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug/Huffman_tree_encoder_and_decoder_simulation
+
+//Value Computed by CMake
+Huffman_tree_encoder_and_decoder_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Huffman_tree_encoder_and_decoder_SOURCE_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms/Huffman_tree_encoder_and_decoder_simulation
+
+//Value Computed by CMake
 Parking_lot_management_system_BINARY_DIR:STATIC=D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug/Parking_lot_management_system
 
 //Value Computed by CMake

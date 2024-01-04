@@ -1182,6 +1182,42 @@
 			"value" : "D:/code/c/Data_Structures_and_Algorithms"
 		},
 		{
+			"name" : "Huffman_tree_encoder_and_decoder_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug/Huffman_tree_encoder_and_decoder_simulation"
+		},
+		{
+			"name" : "Huffman_tree_encoder_and_decoder_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "OFF"
+		},
+		{
+			"name" : "Huffman_tree_encoder_and_decoder_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "D:/code/c/Data_Structures_and_Algorithms/Huffman_tree_encoder_and_decoder_simulation"
+		},
+		{
 			"name" : "Parking_lot_management_system_BINARY_DIR",
 			"properties" : 
 			[

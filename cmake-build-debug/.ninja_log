@@ -3,7 +3,5 @@
 103	246	7259913961396383	Bank_calling_system/main.exe	288efa09ad17aa1f
 2	114	7260425454753821	Parking_lot_management_system/CMakeFiles/park_main.dir/park_main.c.obj	f58bc1d126745c90
 3	96	7259897330953743	Bank_calling_system/CMakeFiles/main.dir/user_generation.c.obj	4c800d529d6ea697
-577	1260	7260391210425859	Parking_lot_management_system/park_main.exe	f7de43e4edb4568b
-6	112	7260425454723301	Parking_lot_management_system/CMakeFiles/park_main.dir/utils.c.obj	1b7a3e7d30bc3758
-2	81	7260427512254276	Parking_lot_management_system/CMakeFiles/park_main.dir/utils.c.obj	1b7a3e7d30bc3758
 82	245	7260427513853513	Parking_lot_management_system/park_main.exe	9e4d910246f068ab
+2	81	7260427512254276	Parking_lot_management_system/CMakeFiles/park_main.dir/utils.c.obj	1b7a3e7d30bc3758

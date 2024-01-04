@@ -32,7 +32,7 @@
 					"source" : "Bank_calling_system",
 					"targetIndexes" : 
 					[
-						0
+						1
 					]
 				},
 				{
@@ -43,8 +43,12 @@
 						"string" : "3.26"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 0,
-					"source" : "Huffman_tree_encoder_and_decoder_simulation"
+					"projectIndex" : 2,
+					"source" : "Huffman_tree_encoder_and_decoder_simulation",
+					"targetIndexes" : 
+					[
+						0
+					]
 				},
 				{
 					"build" : "Parking_lot_management_system",
@@ -54,11 +58,11 @@
 						"string" : "3.26"
 					},
 					"parentIndex" : 0,
-					"projectIndex" : 2,
+					"projectIndex" : 3,
 					"source" : "Parking_lot_management_system",
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				}
 			],
@@ -69,12 +73,12 @@
 					"childIndexes" : 
 					[
 						1,
-						2
+						2,
+						3
 					],
 					"directoryIndexes" : 
 					[
-						0,
-						2
+						0
 					],
 					"name" : "Data_Structures_and_Algorithms"
 				},
@@ -84,6 +88,18 @@
 						1
 					],
 					"name" : "Bank_calling_system",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "Huffman_tree_encoder_and_decoder",
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
@@ -99,12 +115,19 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						1
+						2
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 2,
+					"id" : "hfmtree_main::@468715b96f8302abe2ea",
+					"jsonFile" : "target-hfmtree_main-Debug-36d0514d54a1b188d170.json",
+					"name" : "hfmtree_main",
+					"projectIndex" : 2
+				},
 				{
 					"directoryIndex" : 1,
 					"id" : "main::@b95fbd799fd4385f958e",
@@ -117,7 +140,7 @@
 					"id" : "park_main::@52737b27a1ad7e70fd3e",
 					"jsonFile" : "target-park_main-Debug-144911507d7519d2dbb5.json",
 					"name" : "park_main",
-					"projectIndex" : 2
+					"projectIndex" : 3
 				}
 			]
 		}

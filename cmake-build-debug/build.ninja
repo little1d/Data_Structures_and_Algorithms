@@ -137,6 +137,47 @@ build Bank_calling_system/rebuild_cache: phony Bank_calling_system/CMakeFiles/re
 # D:/code/c/Data_Structures_and_Algorithms/CMakeLists.txt
 # =============================================================================
 
+# =============================================================================
+# Object build statements for EXECUTABLE target hfmtree_main
+
+
+#############################################
+# Order-only phony target for hfmtree_main
+
+build cmake_object_order_depends_target_hfmtree_main: phony || Huffman_tree_encoder_and_decoder_simulation/CMakeFiles/hfmtree_main.dir
+
+build Huffman_tree_encoder_and_decoder_simulation/CMakeFiles/hfmtree_main.dir/hfmtree_main.c.obj: C_COMPILER__hfmtree_main_unscanned_Debug D$:/code/c/Data_Structures_and_Algorithms/Huffman_tree_encoder_and_decoder_simulation/hfmtree_main.c || cmake_object_order_depends_target_hfmtree_main
+  DEP_FILE = Huffman_tree_encoder_and_decoder_simulation\CMakeFiles\hfmtree_main.dir\hfmtree_main.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/code/c/Data_Structures_and_Algorithms/./include
+  OBJECT_DIR = Huffman_tree_encoder_and_decoder_simulation\CMakeFiles\hfmtree_main.dir
+  OBJECT_FILE_DIR = Huffman_tree_encoder_and_decoder_simulation\CMakeFiles\hfmtree_main.dir
+
+build Huffman_tree_encoder_and_decoder_simulation/CMakeFiles/hfmtree_main.dir/huftree_generate.c.obj: C_COMPILER__hfmtree_main_unscanned_Debug D$:/code/c/Data_Structures_and_Algorithms/Huffman_tree_encoder_and_decoder_simulation/huftree_generate.c || cmake_object_order_depends_target_hfmtree_main
+  DEP_FILE = Huffman_tree_encoder_and_decoder_simulation\CMakeFiles\hfmtree_main.dir\huftree_generate.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  INCLUDES = -ID:/code/c/Data_Structures_and_Algorithms/./include
+  OBJECT_DIR = Huffman_tree_encoder_and_decoder_simulation\CMakeFiles\hfmtree_main.dir
+  OBJECT_FILE_DIR = Huffman_tree_encoder_and_decoder_simulation\CMakeFiles\hfmtree_main.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target hfmtree_main
+
+
+#############################################
+# Link the executable Huffman_tree_encoder_and_decoder_simulation\hfmtree_main.exe
+
+build Huffman_tree_encoder_and_decoder_simulation/hfmtree_main.exe: C_EXECUTABLE_LINKER__hfmtree_main_Debug Huffman_tree_encoder_and_decoder_simulation/CMakeFiles/hfmtree_main.dir/hfmtree_main.c.obj Huffman_tree_encoder_and_decoder_simulation/CMakeFiles/hfmtree_main.dir/huftree_generate.c.obj
+  FLAGS = -g
+  LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  OBJECT_DIR = Huffman_tree_encoder_and_decoder_simulation\CMakeFiles\hfmtree_main.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_FILE = Huffman_tree_encoder_and_decoder_simulation\hfmtree_main.exe
+  TARGET_IMPLIB = Huffman_tree_encoder_and_decoder_simulation\libhfmtree_main.dll.a
+  TARGET_PDB = hfmtree_main.exe.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -232,6 +273,10 @@ build Parking_lot_management_system/rebuild_cache: phony Parking_lot_management_
 # =============================================================================
 # Target aliases.
 
+build hfmtree_main: phony Huffman_tree_encoder_and_decoder_simulation/hfmtree_main.exe
+
+build hfmtree_main.exe: phony Huffman_tree_encoder_and_decoder_simulation/hfmtree_main.exe
+
 build main: phony Bank_calling_system/main.exe
 
 build main.exe: phony Bank_calling_system/main.exe
@@ -262,7 +307,7 @@ build Bank_calling_system/all: phony Bank_calling_system/main.exe
 #############################################
 # Folder: D:/code/c/Data_Structures_and_Algorithms/cmake-build-debug/Huffman_tree_encoder_and_decoder_simulation
 
-build Huffman_tree_encoder_and_decoder_simulation/all: phony
+build Huffman_tree_encoder_and_decoder_simulation/all: phony Huffman_tree_encoder_and_decoder_simulation/hfmtree_main.exe
 
 # =============================================================================
 
