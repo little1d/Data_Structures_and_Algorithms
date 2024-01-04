@@ -8,9 +8,12 @@
 
 #include<stdbool.h>
 
+
 typedef struct {
     int plateNumber;
     int arrivalTime;
+    int fees;
+    int leaveTime;
 }Car;
 
 typedef struct{
