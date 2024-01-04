@@ -7,6 +7,15 @@ typedef struct {
     char code[100];
 } CodeMap;
 
+void freeHuffmanTree(HuffmanNode* root) {
+    if (root == NULL) {
+        return;
+    }
+    freeHuffmanTree(root->left);
+    freeHuffmanTree(root->right);
+    free(root);
+}
+
 int main() {
 
     int n = 0;
@@ -18,9 +27,9 @@ int main() {
     printf("Huffman Tree:\n");
     printHuffmanTree(root, 0);
 
-    char codea[100];
+    char codeb[100];
     printf("Huffman Codes:\n");
-    encodeCharacters(root, codea, 0);
+    encodeCharacters(root, codeb, 0);
 
 
     FILE* file = fopen("hfmtree", "r");
@@ -31,17 +40,17 @@ int main() {
 
     CodeMap map[27]; // Assuming 27 characters including space
     int mapSize = 0;
-    char ch;
+    char ch[2];
     char code[100];
-    char space[6];
 
-    while (fscanf(file, "%s: %s\n", space, code) == 2) {
-        if (strcmp(space, "space") == 0) {
+    while (fscanf(file, "%s: %s\n", ch, code) == 2) {
+        if (strcmp(ch, ":") == 0) { // Handle the space character
             map[mapSize].character = ' ';
+            strcpy(map[mapSize].code, code);
         } else {
-            map[mapSize].character = space[0];
+            map[mapSize].character = ch[0];
+            strcpy(map[mapSize].code, code);
         }
-        strcpy(map[mapSize].code, code);
         mapSize++;
     }
     fclose(file);
@@ -64,8 +73,7 @@ int main() {
     char encodedMessage[1000] = "1101000101100011100001001010011000100010101011001001100011110010100011110011101011000001001001001101101010"; // The encoded message goes here
     decodeHuffmanTree(root, encodedMessage);
 
+    freeHuffmanTree(root);
 
-    // Cleanup allocated memory
-    // ...
     return 0;
 }
